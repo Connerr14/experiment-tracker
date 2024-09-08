@@ -1,0 +1,565 @@
+body {
+    background-color: #01204E;
+    color: #F6DCAC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1em; /* 16px */
+    text-align: center;
+}
+
+body h1 {
+    color: #FEAE6F;
+    font-size: 2em;
+}
+
+#homePage #image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homePage #image-container img {
+    text-align: center;
+    margin: auto;
+    width: 30%;
+}
+
+#homePage #imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homePage #imgContainer img {
+    height: 10em;
+    width: 50%;
+    margin-bottom: 2.3em;
+}
+
+header {
+    padding: 1em 0em;
+    background-color: #028391;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    color: #F6DCAC;
+}
+
+nav {
+    width: 90%;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+}
+
+nav ul li {
+    margin-left: 2em; 
+    font-size: 0.94em;
+}
+
+nav ul li a {
+    color: #F6DCAC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FEAE6F;
+}
+
+.content {
+    padding: 1em 10em; /* 1vw = 0.16em, 10vw = 1.6em */
+    text-align: center;
+}
+
+.content h2 {
+    color: #FEAE6F;
+    font-size: 3em;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin: 2em 0; /* 2vw = 0.32em */
+}
+
+.content a, #login-cta {
+    display: inline-block;
+    margin: 2em 1em; /* 2vw = 0.32em, 1vw = 0.16em */
+    padding: 1em 2em; /* 1vw = 0.16em, 2vw = 0.32em */
+    background-color: #FEAE6F;
+    color: #01204E;
+    text-decoration: none;
+    border-radius: 0.5em; /* 0.5vw = 0.08em */
+    font-weight: bold;
+}
+
+.content a:hover {
+    background-color: #F6DCAC;
+    color: #01204E;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #028391;
+    color: #F6DCAC;
+    border-radius: 1em; /* 1vw = 0.16em */
+    padding: 2em; /* 2vw = 0.32em */
+    margin: 1em; /* 1vw = 0.16em */
+    width: calc(30% - 2em); /* 2vw = 0.32em */
+    box-shadow: 0 4em 8em rgba(0, 0, 0, 0.2); /* 4vw = 0.64em, 8vw = 1.28em */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-1em); /* 1vw = 0.16em */
+}
+
+.card h3 {
+    color: #FEAE6F;
+}
+
+.card p {
+    font-size: 1em;
+}
+
+
+.testimonials {
+    background-color: #028391;
+    padding: 3em 10em; /* 3vw = 0.48em, 10vw = 1.6em */
+    margin-top: 2em; /* 2vw = 0.32em */
+    margin-bottom: 2em; /* 2vw = 0.32em */
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 0.3em;
+}
+
+.testimonial {
+    background-color: #01204E;
+    color: #F6DCAC;
+    border-radius: 1em; /* 1vw = 0.16em */
+    padding: 2em; /* 2vw = 0.32em */
+    margin: 1em 0; /* 1vw = 0.16em */
+    box-shadow: 0 4em 8em rgba(0, 0, 0, 0.2); /* 4vw = 0.64em, 8vw = 1.28em */
+}
+
+.testimonial h4 {
+    color: #FEAE6F;
+    margin-bottom: 1em; /* 1vw = 0.16em */
+}
+
+footer {
+    background-color: #028391;
+    padding: 1em; /* 1vw = 0.16em */
+    text-align: center;
+    color: #F6DCAC;
+    margin-top: 3em; /* 3vw = 0.48em */
+}
+
+.form body {
+    text-align: center;
+    background-color: #01204E;
+    color: #F6DCAC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form h1 {
+    color: #F6DCAC;
+    text-align: center;
+}
+
+.form form {
+    background-color: #028391;
+    padding: 2em; /* 2vw = 0.32em */
+    margin: 2em 0; /* 2vw = 0.32em */
+    border-radius: 1em; /* 1vw = 0.16em */
+    width: 80em; /* 80vw = 12.8em */
+    max-width: 31.25em; /* 500px = 31.25em */
+    text-align: center;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 1em; /* 1vw = 0.16em */
+    font-weight: bold;
+}
+
+.form input[type="number"],
+.form input[type="text"],
+.form input[type="date"],
+input[type="submit"] {
+    width: calc(100% - 2em); /* 2vw = 0.32em */
+    padding: 1em; /* 1vw = 0.16em */
+    margin-bottom: 2em; /* 2vw = 0.32em */
+    border: none;
+    border-radius: 0.5em; /* 0.5vw = 0.08em */
+}
+
+.form input[type="number"],
+.form input[type="text"],
+.form input[type="date"] {
+    background-color: #F6DCAC;
+    color: #01204E;
+}
+
+.form input[type="submit"] {
+    background-color: #FEAE6F;
+    color: #01204E;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #F6DCAC;
+    color: #01204E;
+}
+
+@media (max-width: 600px) {
+    .form form {
+        width: 90em; 
+        padding: 4em; 
+    }
+
+    .form input[type="number"],
+    .form input[type="text"],
+    .form input[type="date"],
+    .form input[type="submit"] {
+        width: calc(100% - 4em); 
+        padding: 2em; 
+        margin-bottom: 4em;
+        border-radius: 1em; 
+    }
+}
+
+#statsPage main {
+    text-align: center;
+    margin: 2em auto;
+}
+
+
+#statsLoggedPage .mainContent {
+    text-align: center;
+   margin: 4em auto;
+}
+
+#statsLoggedPage .mainContent a {
+    display: inline-block;
+    margin: 0.5em 1em;
+    padding: 1em 2em;
+    background-color: #FEAE6F;
+    color: #01204E;
+    text-decoration: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+
+#logStatsPage > header +  h1, #setupExperimentPage > header + h1  {
+    color: #FEAE6F;
+}
+
+#logStatsPage #experiment-name {
+    margin-bottom: 1.2em;
+}
+
+#logStatsPage p {
+    text-align: center;
+    margin-bottom: 1.7em;
+}
+
+#setupExperimentPage p {
+    text-align: center;
+    margin-bottom: 1.7em;
+    color: rgb(234, 9, 9);
+}
+
+.footer {
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0.1em; 
+
+}
+
+.footer ul {
+    padding: 0;
+    display: flex;
+
+}
+
+.footer li {
+    margin: 1em auto;
+}
+
+nav ul li img {
+    width: 7em;
+    height: 6em;
+    border-radius: 2.2em;
+    margin-right: 1em;
+}
+
+.content h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+#general-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.experiment-details {
+    background-color: #028391;
+    margin: 1.2em;
+    margin-top: 1em;
+    border-radius: 10em;
+}
+
+#statsPage #general-wrapper h2 {
+    color: #FEAE6F;
+    margin: 0;
+    padding: 1em;
+}
+
+
+/* Homepage content media queries */
+
+/* XS Screens */
+@media (max-width: 375px) {
+    body {
+        font-size: 0.5em;
+    }
+
+    #homePage h3{
+        font-size: 1.8em;
+    }
+
+
+    #homePage p {
+        font-size: 1.8em;
+    }
+
+    #homePage .content > p ~ a  {
+        font-size: 1.5em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 1em auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0.5em;
+
+    }
+
+    nav ul li {
+        margin: 0.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.6em;
+    }
+
+    h4 {
+        font-size: 2.2em;
+    }
+}
+
+/* SM Screens */
+@media (min-width:376px) and (max-width: 500px) {
+    #homePage .testimonials h2 {
+        font-size: 2em;
+    }
+
+    body {
+        font-size: 0.6em;
+    }
+
+    header > a {
+        font-size: 1.5em;
+        margin: 1em;
+    }
+
+
+    #homePage p {
+        font-size: 1.9em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 1em auto;
+    }
+
+    #homePage h3 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0.5em;
+
+    }
+
+    nav ul li {
+        margin: 0.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.6em;
+    }
+
+    h4 {
+        font-size: 2.2em;
+    }
+}
+
+
+@media (min-width:501px) and (max-width: 584px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    #homePage h2{
+        font-size: 2.4em;
+    }
+
+    #homePage p {
+        font-size: 1.7em;
+    }
+
+    #homePage .card p {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: 2.2em;
+    }
+
+    .card-container {
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card {
+        width: auto;
+        padding: 0.1em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0.5em;
+
+    }
+
+    nav ul li {
+        margin: 0.5em;
+    }
+
+    nav ul li a {
+        font-size: 1.6em;
+    }
+}
+
+/* MD Screens */
+@media (min-width:585px) and (max-width: 768px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    #homePage h2{
+        font-size: 2em;
+    }
+
+    .card-container {
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card {
+        width: 30%;
+        margin: 1em;
+    }
+}
+
+/* LG Screens */
+@media (min-width:769px) and (max-width: 1024px) {
+    body {
+        font-size: 1em;
+    }
+
+    #homePage h2{
+        font-size: 2.5em;
+    }
+
+    .card-container {
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card {
+        width: 30%;
+        margin: 1em;
+    }
+}
+
+
+@media screen and (max-width: 868px) {
+    .footer .spacer {
+        display: none;
+    }
+}
+
+
+

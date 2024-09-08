@@ -1,0 +1,104 @@
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.formWrapper {
+    background-color: #028391;
+    width: 50%;
+    margin: 1em auto;
+    border-radius: 1em;
+}
+
+
+/* Style the form elements */
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: calc(100% - 20px);
+    background-color: #F6DCAC;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+label {
+    display: inline-block;
+    margin: 8px;
+}
+
+/* Style for buttons */
+button {
+    background-color: #FEAE6F;
+    color: #01204E;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+button:hover {
+    background-color: #F6DCAC;
+}
+
+p {
+    color: #F6DCAC;
+    font-size: 1.3em;
+    line-height: 1.6;
+
+}
+
+#login {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.8em 0.9em;
+    background-color: #FEAE6F;
+    color: black;
+    margin-bottom: 2em;
+}
+
+#create {
+    color: #01204E;
+    display: block;
+    margin-top: 2em;
+    width: 20%;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #FEAE6F;;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+
+
+#loginPage h3 {
+    color: black;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+#loginPage #logoutButton {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    width: 20%;
+    margin: 20px auto;
+}
+
+
+#createAccount {
+    padding: 0.5em;
+}
+
+#loginMessage {
+    font-size: 1.2em;
+    margin-top: -1em ;
+    color: red;
+}
+
